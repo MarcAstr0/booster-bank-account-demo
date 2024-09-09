@@ -1,5 +1,5 @@
-import { Booster, Command } from "@boostercloud/framework-core";
-import { EventDeleteParameters } from "@boostercloud/framework-types";
+import { Booster, Command } from '@boostercloud/framework-core';
+import { EventDeleteParameters } from '@boostercloud/framework-types';
 
 @Command({
     authorize: 'all'
