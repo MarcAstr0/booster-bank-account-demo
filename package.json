@@ -1,0 +1,50 @@
+{
+  "name": "bank-account-demo",
+  "description": "Bank account demo using Booster",
+  "version": "0.1.0",
+  "author": "Mario Castro Squella <mario@theagilemonkeys.com>",
+  "dependencies": {
+    "tslib": "^2.4.0",
+    "@boostercloud/framework-core": "^2.18.1",
+    "@boostercloud/framework-types": "^2.18.1",
+    "@boostercloud/framework-common-helpers": "^2.18.1",
+    "@boostercloud/framework-provider-azure": "^2.18.1"
+  },
+  "devDependencies": {
+    "@boostercloud/framework-provider-local": "^2.18.1",
+    "@boostercloud/framework-provider-local-infrastructure": "^2.18.1",
+    "@boostercloud/metadata-booster": "^2.18.1",
+    "@boostercloud/framework-provider-azure-infrastructure": "^2.18.1",
+    "rimraf": "^5.0.0",
+    "@typescript-eslint/eslint-plugin": "4.22.1",
+    "@typescript-eslint/parser": "4.22.1",
+    "eslint": "7.26.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-prettier": "3.4.0",
+    "mocha": "10.2.0",
+    "@types/mocha": "10.0.1",
+    "@types/jsonwebtoken": "9.0.1",
+    "nyc": "15.1.0",
+    "prettier":  "2.3.0",
+    "typescript": "5.1.6",
+    "ts-node": "9.1.1",
+    "@types/node": "^18.18.2",
+    "ts-patch": "3.1.2",
+    "graphql": "^16.6.0"
+  },
+  "engines": {
+    "node": ">=18.0.0 <19.0.0"
+  },
+  "homepage": "",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "repository": "git@github.com:MarcAstr0/booster-bank-account-demo.git",
+  "scripts": {
+    "prepare": "ts-patch install -s",
+    "lint:check": "eslint --ext '.js,.ts' **/*.ts",
+    "lint:fix": "eslint --quiet --fix --ext '.js,.ts' **/*.ts",
+    "build": "tsc -b tsconfig.json",
+    "clean": "rimraf ./dist tsconfig.tsbuildinfo"
+  },
+  "types": "lib/index.d.ts"
+}
